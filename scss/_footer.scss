@@ -10,11 +10,15 @@ footer {
     z-index: 1;
     position: relative;
 
-    #logo{
+    #logo {
         align-items: center;
         text-align: center;
+        border: 1px solid #d1d1d1;
+        padding: 16px;
+        background-color: #f9f9f9;
+        border-radius: 20px;
 
-        img{
+        img {
             display: flex;
             margin: 0 auto;
         }
@@ -25,7 +29,8 @@ footer {
     }
 
     .d-flex {
-        justify-content: space-between;
+        justify-content: space-around;
+        
 
         h4 {
             margin-bottom: $gutter * 3;
