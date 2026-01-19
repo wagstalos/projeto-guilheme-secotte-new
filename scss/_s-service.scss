@@ -2,13 +2,15 @@
     @include paddingSection(90px);
 
     .d-flex {
-        justify-content: center;
-        align-items: center;
-
+        display: flex;
 
     }
 
     &__description {
         width: 30%;
+    }
+
+    &__swiper {
+        width: 70%;
     }
 }
