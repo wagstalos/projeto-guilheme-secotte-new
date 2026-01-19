@@ -20,11 +20,15 @@ header {
                 color: $brand-main-light;
             }
         }
+
+        .logo {
+            color: $brand-main;
+        }
     }
 
     .logo {
         font-size: 3rem;
-        color: $brand-main;
+        color: $white;
     }
 
     .container {
