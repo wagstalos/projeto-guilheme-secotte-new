@@ -120,7 +120,7 @@
     }
 
     .swiper-pagination {
-        position: relative;
+        // position: relative;
         margin-top: 3rem;
         width: 100%;
         text-align: center;
@@ -148,7 +148,7 @@
             margin: 0 auto;
             text-align: center;
             justify-content: center;
-            padding: 0rem ;
+            padding: 0rem;
         }
 
         .d-flex {
@@ -161,6 +161,10 @@
 
         &__swiper {
             width: 100%;
+        }
+
+        .swiper-pagination {
+            position: relative;
         }
     }
 }

@@ -1,10 +1,9 @@
 .btn-primary,
 .btn-secondary {
-    font-family: "Montserrat", sans-serif;
     border-radius: 50px;
 
     padding: 0 3rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 5rem;
     font-weight: 500;
 }
@@ -29,11 +28,10 @@
     color: $white;
     transition: all 0.3s ease-in;
     padding: 1rem 2rem;
-
     border: 1px solid $brand-main-light;
 
     &:hover {
-        background-color: $brand-main-light;
+        background-color: $brand-700;
         color: $white;
     }
 }
