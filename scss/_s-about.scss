@@ -1,3 +1,41 @@
 .s-about {
     @include paddingSection(90px);
+
+    // .d-flex {
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+
+    &__description {
+        color: $brand-gray;
+        margin-top: 20px;
+
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        text-align: center;
+
+    }
+
+    &__img {
+
+
+        img {
+            width: 80%;
+            border-radius: 20px;
+            max-height: 400px;
+
+            margin: 0 auto;
+
+            margin-top: 50px;
+            object-fit: cover;
+        }
+
+    }
+
+
+
+
 }

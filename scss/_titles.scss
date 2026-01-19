@@ -33,18 +33,23 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Zilla Slab", serif;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     color: $gray-500;
 }
 
-p {
+p,
+li {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 150%;
     color: $gray-600;
-    font-family: "Nunito", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .subtitle {
@@ -60,73 +65,12 @@ p {
     text-transform: uppercase;
 }
 
-.inter {
-    font-family: "Inter", sans-serif;
+.playfair-display-regular {
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.zilla-slab-light {
-    font-family: "Zilla Slab", serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.zilla-slab-regular {
-    font-family: "Zilla Slab", serif;
     font-weight: 400;
     font-style: normal;
 }
-
-.zilla-slab-medium {
-    font-family: "Zilla Slab", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.zilla-slab-semibold {
-    font-family: "Zilla Slab", serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.zilla-slab-bold {
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.zilla-slab-light-italic {
-    font-family: "Zilla Slab", serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.zilla-slab-regular-italic {
-    font-family: "Zilla Slab", serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.zilla-slab-medium-italic {
-    font-family: "Zilla Slab", serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.zilla-slab-semibold-italic {
-    font-family: "Zilla Slab", serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.zilla-slab-bold-italic {
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
 
 .title-section {
     font-weight: 600;

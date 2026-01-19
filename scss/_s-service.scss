@@ -1,3 +1,14 @@
 .s-service {
     @include paddingSection(90px);
+
+    .d-flex {
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    &__description {
+        width: 30%;
+    }
 }
