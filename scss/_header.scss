@@ -3,12 +3,27 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8rem;
+    height: 7rem;
     display: flex;
     z-index: 12;
 
     // border-bottom: 2px solid #ecf2fb;
     // background-color: $white;
+
+    transition: all 0.3s ease;
+
+    &.scrolled {
+        background-color: $white;
+        border-bottom: 2px solid #ecf2fb;
+
+        .container nav ul li a {
+            color: $brand-main;
+
+            &:hover {
+                color: $brand-main-light;
+            }
+        }
+    }
 
     .logo {
         font-size: 3rem;
