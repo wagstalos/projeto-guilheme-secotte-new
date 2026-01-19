@@ -1,0 +1,151 @@
+.s-hero {
+    width: 100%;
+    padding-top: 8rem;
+    height: 100vh;
+    @include flex(row, center, center);
+
+    background: linear-gradient(90deg, rgba($brand-main, 0.95) 0%, rgba($brand-main, 0.8) 40%, rgba($brand-main, 0) 100%), url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .d-flex {
+        align-items: center;
+    }
+
+    .btn-primary {
+        svg {
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            svg {
+                transform: translateX(8px);
+            }
+        }
+    }
+
+    &__text {
+        margin-bottom: 3.9rem;
+        width: 50%;
+
+        .lead {
+            display: flex;
+            align-items: center;
+            color: $white;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        .title {
+            font-size: 4.5rem;
+            line-height: 120%;
+            font-weight: 600;
+
+            color: $white;
+            max-width: 74rem;
+        }
+
+        .description {
+            max-width: 50rem;
+            margin-top: 3.4rem;
+            margin-bottom: 4rem;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: $gray-100;
+        }
+    }
+
+
+
+    .infos {
+        max-width: 50%;
+
+        li {
+            border-bottom: 1px solid #efefef;
+            padding: 9px;
+        }
+
+        &__title {
+            color: $gray-500;
+            font-size: 2.5rem;
+        }
+
+        &__description {
+            font-size: 1.5rem;
+            color: $gray-400;
+        }
+    }
+
+    @include responsive($laptop) {
+        &__text {
+            .title {
+                font-size: 3rem;
+                line-height: 110%;
+            }
+        }
+
+        .infos {
+            max-width: 70%;
+            margin-left: 15%;
+        }
+    }
+
+    @include responsive($tablet) {
+        padding-top: 12rem;
+        height: auto;
+
+        .d-flex {
+            flex-direction: column;
+        }
+
+        &__text {
+            text-align: center;
+            width: 100%;
+
+            .btn-primary {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+            }
+
+            .title {
+                font-size: 3rem;
+            }
+
+            .description {
+                max-width: 100%;
+                margin: 3rem auto;
+            }
+
+            .lead {
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    display: none;
+                }
+            }
+
+            .infos {
+                flex-direction: row;
+            }
+        }
+
+
+
+        .infos {
+            max-width: 100%;
+            margin-left: 0;
+            flex-direction: row;
+        }
+    }
+
+    @include responsive($mobile) {
+        .btn-primary {
+            width: 100%;
+        }
+    }
+}
