@@ -3,14 +3,34 @@
 
     .d-flex {
         display: flex;
+        justify-content: space-between;
 
     }
 
     &__description {
-        width: 30%;
+        width: 38%;
     }
 
     &__swiper {
-        width: 70%;
+        width: 60%;
+        overflow: hidden;
+
+        .swiper-slide {
+            background-color: #f7fcff;
+            padding: 2rem;
+            border-radius: 12px;
+            height: auto;
+            border: 1px solid #e1e1e1;
+
+            h2 {
+                color: $brand-main;
+                font-family: "playfair display";
+                margin-bottom: 2rem;
+            }
+
+            p {
+                color: $brand-gray;
+            }
+        }
     }
 }
