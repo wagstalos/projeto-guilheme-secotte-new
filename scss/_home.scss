@@ -180,8 +180,9 @@
     @include responsive($mobile) {
         .btn-primary {
             width: 100%;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             height: 50px;
+            font-weight: 600;
         }
     }
 }
