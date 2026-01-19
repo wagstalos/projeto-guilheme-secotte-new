@@ -5,18 +5,31 @@
         display: flex;
         justify-content: space-between;
 
+        margin-top: 50px;
+
     }
 
     &__description {
         width: 38%;
+        margin-bottom: 50px;
+
+        h3 {
+            color: $brand-gray;
+        }
+
+        p {
+            margin-top: 20px;
+        }
     }
 
     &__swiper {
         width: 60%;
         overflow: hidden;
+        position: relative; // Ensure container is relative for absolute children
 
         h3 {
             color: $white;
+            margin-bottom: 10px;
 
             &::first-letter {
                 font-size: 4rem;
@@ -62,9 +75,16 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-        color: $white;
+        color: $brand-black;
         width: 3rem;
         height: 3rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 50px;
 
         &::after {
             font-size: 1.5rem;
@@ -77,10 +97,47 @@
     }
 
     .swiper-button-next {
-        right: 0;
+        right: 10px; // Add slight padding from edge
     }
 
     .swiper-button-prev {
-        left: 0;
+        left: 10px; // Add slight padding from edge
+    }
+
+    .swiper-pagination {
+        position: relative;
+        margin-top: 3rem;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        display: block; // Ensure it's visible
+
+        &-bullet {
+            background-color: #bdc3c7;
+            opacity: 1;
+            width: 1rem;
+            height: 1rem;
+            transition: all 0.3s ease;
+
+            &-active {
+                background-color: $brand-main;
+                width: 3rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    @include responsive($tablet) {
+        .d-flex {
+            flex-direction: column;
+        }
+
+        &__description {
+            width: 100%;
+        }
+
+        &__swiper {
+            width: 100%;
+        }
     }
 }
