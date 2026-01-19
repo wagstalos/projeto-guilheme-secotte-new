@@ -1,6 +1,18 @@
 .s-service {
     @include paddingSection(90px);
 
+    .btn-secondary {
+        color: $brand-600;
+        background-color: $white;
+        font-size: 1.6rem;
+        padding: 1rem 4rem;
+
+        &:hover {
+            background-color: $brand-600;
+            color: $white;
+        }
+    }
+
     .d-flex {
         display: flex;
         justify-content: space-between;
@@ -11,6 +23,7 @@
 
     &__description {
         width: 38%;
+
         margin-bottom: 50px;
 
         h3 {
@@ -19,6 +32,7 @@
 
         p {
             margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 
@@ -44,7 +58,8 @@
             border-radius: 12px;
             height: auto;
             border: 1px solid #e1e1e1;
-            height: 351px;
+            height: 381px;
+            background-position: 25% center;
 
             &:nth-child(2) {
                 background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(22, 60, 71, 0.95) 100%), url('../img/family2.webp');
@@ -128,6 +143,14 @@
     }
 
     @include responsive($tablet) {
+        .btn-secondary {
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+            justify-content: center;
+            padding: 0rem ;
+        }
+
         .d-flex {
             flex-direction: column;
         }
