@@ -156,6 +156,7 @@
             .lead {
                 align-items: center;
                 justify-content: center;
+                font-size: 1.6rem;
 
                 span {
                     display: none;
@@ -177,6 +178,7 @@
     @include responsive($mobile) {
         .btn-primary {
             width: 100%;
+            font-size: 1.6rem;
         }
     }
 }

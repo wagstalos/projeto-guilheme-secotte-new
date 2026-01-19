@@ -37,6 +37,7 @@ footer {
                 align-items: center;
                 margin-bottom: $gutter * 3;
             }
+
             span {
                 margin-right: $gutter * 2;
             }
@@ -91,6 +92,7 @@ footer {
 
             &:hover {
                 border: 1px solid $green;
+
                 svg {
                     transform: translateY(-3px);
                 }
@@ -111,10 +113,12 @@ footer {
     @include responsive($mobile) {
         .d-flex {
             flex-direction: column;
+
             h4 {
                 margin: ($gutter * 3) 0;
             }
         }
+
         .wps-games {
             margin-top: $gutter * 2;
             display: flex;

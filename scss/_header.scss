@@ -7,19 +7,11 @@ header {
     display: flex;
     z-index: 12;
 
-    // border-bottom: 2px solid #ecf2fb;
-    // background-color: $white;
-
     transition: all 0.3s ease;
 
     &.scrolled {
         background-color: $white;
-        border-bottom: 2px solid #ecf2fb;
-        // width: 90%;
-        // left: 5%;
-        // border-radius: 50px;
-        // margin-top: 10px;
-        // height: 55px;
+        border-bottom: 1px solid #ecf2fb;
 
         .container nav ul li a {
             color: $brand-main;
@@ -40,7 +32,7 @@ header {
     }
 
     .btn-secondary {
-        padding: 2rem 2rem;
+        padding: 1rem 2rem;
         line-height: 0;
     }
 
