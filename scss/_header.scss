@@ -7,8 +7,13 @@ header {
     display: flex;
     z-index: 12;
 
-    border-bottom: 2px solid #ecf2fb;
-    background-color: $white;
+    // border-bottom: 2px solid #ecf2fb;
+    // background-color: $white;
+
+    .logo {
+        font-size: 3rem;
+        color: $brand-main;
+    }
 
     .container {
         @include flex(row, center, space-between);
@@ -33,17 +38,20 @@ header {
                 img {
                     margin-left: 1.2rem;
                 }
+
                 &:not(:first-child) {
                     margin-left: 4.8rem;
                 }
+
                 a {
                     font-family: "Inter", sans-serif;
                     font-weight: 500;
                     font-size: 1.6rem;
                     line-height: 125%;
-                    color: rgb(64, 64, 64);
-                    opacity: 0.7;
+                    color: $white;
+
                     transition: color 0.3s;
+
                     &:hover {
                         color: $brand-main-light;
                     }
@@ -68,6 +76,7 @@ header {
         height: 7rem;
         display: flex;
         align-items: center;
+
         nav {
             ul {
                 display: none;
@@ -77,6 +86,7 @@ header {
         .dots {
             display: block;
         }
+
         .btn-secondary {
             display: none;
         }
@@ -110,6 +120,7 @@ header {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+
         svg {
             width: 24px;
             margin: 8px;
@@ -133,6 +144,7 @@ header {
             font-size: 2rem;
             margin: 24px 0;
             font-weight: 700;
+
             a {
                 color: $black;
             }
@@ -151,6 +163,7 @@ header {
     border-radius: $border-radius * 10;
     margin-right: $gutter * 2;
     display: none;
+
     // position: fixed;
     .icons-dots {
         display: none;
