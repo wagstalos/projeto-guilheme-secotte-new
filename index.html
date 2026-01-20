@@ -385,8 +385,144 @@
 
   </section>
 
+  <section class="s-contact" id="consultorio">
+    <span class="subtitle">Localização</span>
+    <h2 class="title-section text-dark">Consultório</h2>
+    <!-- <p class="text-center">
+      Caso tenha preferencia em realizar o atendimento presencialmente, este é o endereço do consultório:
+    </p> -->
 
-  <section class="s-contact" id="contato">
+    <div class="container">
+
+      <div class="maps">
+        <div class="text">
+          <img src="img/icon-address.svg" alt="icone endereço" title="icone endereço" loading="lazy">
+
+          <h3 class="title">Endereço</h3>
+
+          <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Itacolomi,+333+-+Higien%C3%B3polis,+S%C3%A3o+Paulo+-+SP,+01239-020"
+            target="_blank
+          ">
+
+            <p>R. Itacolomi, 333 - Higienópolis | São Paulo - SP, 01239-020</p>
+          </a>
+
+          <ul>
+            <li>
+              <img src="img/car-solid.svg" alt="icone carro" title="icone carro" width="24px" height="24px"
+                loading="lazy">
+              <p>Estacionamento
+                com manobrista</p>
+
+            </li>
+            <li>
+              <img src="img/subway-sloid.svg" alt="icone metrô" title="icone metrô" width="24px" height="24px"
+                loading="lazy">
+              <p>A 600 metros da Estação Higienópolis-Mackenzie</p>
+            </li>
+            <li>
+              <img src="img/wheelchair-solid.svg" alt="icone acessível" title="icone acessível" width="24px"
+                height="24px" loading="lazy">
+              <p>Acessível para
+                deficientes físicos</p>
+            </li>
+          </ul>
+
+
+          <div class="maps-google">
+            <div id="map-container">
+              <!-- Imagem estática do mapa como pré-visualização -->
+              <img id="map-thumbnail" src="img/maps.jpg" alt="Google Maps" width="100%" height="auto" loading="lazy"
+                style="cursor: pointer;">
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="img/escritorio.webp" alt="Consultório Higienópolis" title="Consultório Higienópolis" loading="lazy">
+        </div>
+      </div>
+
+      <span class="subtitle mt-80" id="contato">Fale conosco</span>
+      <h2 class="title-section text-dark">Contato</h2>
+      <div class="d-flex">
+        <div class="card item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3E81D1" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+          </svg>
+          <h3>Whatsapp</h3>
+          <p>(11) 98554-7723</p>
+
+          <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511985547723&text=Ol%C3%A1%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20os%20atendimentos."
+            target="_blank" class="btn-contact" aria-label="btn whats">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="card item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" id="btn-contato-whata"
+            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3E81D1" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+          <h3>E-mail</h3>
+          <p>secotte@outlook.com</p>
+          <a href="mailto:secotte@outlook.com" class="btn-contact" id="btn-contato-email" aria-label="btn email">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="card item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-11" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3E81D1" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M12 12l-2 -3" />
+            <path d="M12 7v5" />
+          </svg>
+          <h3>Atendimento</h3>
+          <p>
+            Segunda à sexta das 08:00h às 21:00h</p>
+          <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511985547723&text=Ol%C3%A1%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20os%20atendimentos."
+            target="_blank" class="btn-contact" id="btn-contato-atendimento" aria-label="horário">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- <section class="s-contact" id="contato">
     <span class="subtitle">Contato</span>
     <h2 class="title-section text-dark">Vamos dar o primeiro passo?</h2>
     <p class="text-center">
@@ -468,7 +604,7 @@
 
 
     </div>
-  </section>
+  </section> -->
 
   <footer>
     <div class="container color-dark">
