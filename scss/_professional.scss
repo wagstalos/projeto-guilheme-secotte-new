@@ -1,0 +1,44 @@
+.s-professional {
+    @include paddingSection(90px);
+
+
+    .d-flex {
+        margin-top: 50px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__description {
+        width: 50%;
+    }
+
+    &__img {
+        width: 40%;
+
+        img {
+            border-radius: $gutter*4;
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    &__list {
+        margin-top: 3rem;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            color: $brand-gray;
+            line-height: 140%;
+
+            img {
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}

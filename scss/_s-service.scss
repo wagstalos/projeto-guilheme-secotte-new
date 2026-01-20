@@ -1,14 +1,15 @@
 .s-service {
     @include paddingSection(90px);
+    background-color: #EAF5FD;
 
     .btn-secondary {
-        color: $brand-600;
-        background-color: $white;
+        // color: $brand-600;
+        background-color: $brand-700;
         font-size: 1.6rem;
         padding: 1rem 4rem;
 
         &:hover {
-            background-color: $brand-600;
+            background-color: $brand-800;
             color: $white;
         }
     }
