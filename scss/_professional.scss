@@ -1,7 +1,6 @@
 .s-professional {
     @include paddingSection(90px);
 
-
     .d-flex {
         margin-top: 50px;
         justify-content: space-around;
@@ -10,6 +9,11 @@
 
     &__description {
         width: 50%;
+
+        .btn-flex {
+            display: flex;
+            gap: 3rem;
+        }
     }
 
     &__img {

@@ -36,6 +36,21 @@
     }
 }
 
+.btn-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $brand-800;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+    text-decoration: underline;
+
+    &:hover {
+        color: $brand-600;
+    }
+}
+
 @include responsive($mobile) {
     .btn-primary {
         line-height: 0.8rem;
