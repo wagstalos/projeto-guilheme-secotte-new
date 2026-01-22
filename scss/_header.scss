@@ -14,7 +14,7 @@ header {
         border-bottom: 1px solid #ecf2fb;
 
         .container nav ul li a {
-            color: $brand-main;
+            color: $brand-800;
 
             &:hover {
                 color: $brand-main-light;
@@ -22,7 +22,7 @@ header {
         }
 
         .logo {
-            color: $brand-main;
+            color: $brand-800;
         }
     }
 
