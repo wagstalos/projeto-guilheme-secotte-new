@@ -99,7 +99,7 @@
 
                 .swiper-button-next-contact,
                 .swiper-button-prev-contact {
-                    color: $brand-black;
+                    color: $white;
                     width: 3rem;
                     height: 3rem;
                     position: absolute;
@@ -107,7 +107,7 @@
                     transform: translateY(-50%);
                     z-index: 99;
                     cursor: pointer;
-                    background-color: #fff;
+                    background-color: #00000070;
                     border-radius: 50px;
                     display: flex;
                     align-items: center;

@@ -24,11 +24,11 @@
 }
 
 .btn-secondary {
-    background-color: $brand-600;
-    color: $white;
+    background-color: transparent;
+    color: $brand-900;
     transition: all 0.3s ease-in;
     padding: 1rem 2rem;
-    border: 1px solid $brand-main-light;
+    border: 1px solid $brand-900;
 
     &:hover {
         background-color: $brand-700;

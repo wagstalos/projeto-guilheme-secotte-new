@@ -4,7 +4,7 @@
 
     .btn-secondary {
         // color: $brand-600;
-        background-color: $brand-700;
+        // background-color: transparent;
         font-size: 1.6rem;
         padding: 1rem 4rem;
 
@@ -24,12 +24,7 @@
 
     &__description {
         width: 38%;
-
         margin-bottom: 50px;
-
-        h3 {
-            color: $brand-gray;
-        }
 
         p {
             margin-top: 20px;
@@ -91,7 +86,7 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-        color: $brand-black;
+        color: $white;
         width: 3rem;
         height: 3rem;
         position: absolute;
@@ -99,7 +94,7 @@
         transform: translateY(-50%);
         z-index: 10;
         cursor: pointer;
-        background-color: #fff;
+        background-color: #00000070;
         border-radius: 50px;
 
         &::after {

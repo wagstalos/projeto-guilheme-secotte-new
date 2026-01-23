@@ -35,7 +35,7 @@
             display: flex;
             align-items: center;
             color: $white;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 500;
 
             b {
@@ -179,7 +179,7 @@
 
     @include responsive($mobile) {
         .btn-primary {
-            width: 100%;
+            width: 85%;
             font-size: 1.8rem;
             height: 50px;
             font-weight: 600;
