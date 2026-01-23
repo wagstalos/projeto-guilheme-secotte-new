@@ -46,6 +46,10 @@
         }
     }
 
+    hr {
+        border: solid #f5f7fa 1px;
+    }
+
     @include responsive($tablet) {
         .d-flex {
             flex-direction: column;
@@ -72,7 +76,6 @@
 
     @include responsive($mobile) {
 
-
         &__img {
             width: 100%;
 
@@ -85,6 +88,25 @@
                 margin-bottom: 40px;
             }
         }
+
+
+        h4 {
+            text-align: center;
+        }
+
+        .btn-flex {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            background-color: #f5f7fa;
+            padding: 2rem;
+            border-radius: 10px;
+
+            .btn-link {
+                white-space: nowrap;
+            }
+        }
+
 
     }
 }

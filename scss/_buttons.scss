@@ -44,10 +44,9 @@
     font-size: 1.8rem;
     font-weight: 500;
     transition: all 0.3s ease-in;
-    text-decoration: underline;
 
     &:hover {
-        color: $brand-600;
+        text-decoration: underline;
     }
 }
 
