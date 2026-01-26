@@ -131,7 +131,7 @@ header.scrolled .logo-white {
 
     .logo {
         position: absolute;
-        top: calc(40px + env(safe-area-inset-top));
+        top: calc(80px + env(safe-area-inset-top));
         left: 25px;
     }
 
@@ -175,7 +175,7 @@ header.scrolled .logo-white {
 
     .icon-tabler-x {
         position: absolute;
-        top: calc(40px + env(safe-area-inset-top));
+        top: calc(80px + env(safe-area-inset-top));
         right: 25px;
     }
 
