@@ -182,6 +182,13 @@
     }
 
     @include responsive($mobile) {
+
+        ul {
+            li {
+                font-size: 1.6rem;
+            }
+        }
+
         .btn-primary {
             width: 85%;
             font-size: 1.8rem;
