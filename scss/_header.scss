@@ -129,6 +129,12 @@ header.scrolled .logo-white {
     z-index: 12;
     display: none;
 
+    .logo {
+        position: absolute;
+        top: calc(40px + env(safe-area-inset-top));
+        left: 25px;
+    }
+
     .btn-primary {
         display: flex;
         position: absolute;
@@ -169,8 +175,8 @@ header.scrolled .logo-white {
 
     .icon-tabler-x {
         position: absolute;
-        top: 16px;
-        right: 16px;
+        top: calc(40px + env(safe-area-inset-top));
+        right: 25px;
     }
 
     ul {
