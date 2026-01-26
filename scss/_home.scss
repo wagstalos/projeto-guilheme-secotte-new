@@ -4,7 +4,7 @@
     height: 95vh;
     @include flex(row, center, center);
 
-    background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 70%), url('../img/hero.webp');
+    background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 70%), url('../img/guilherme.webp');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 65%;
@@ -127,7 +127,7 @@
     @include responsive($tablet) {
         padding-top: 12rem;
         height: auto;
-        background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 100%), url('../img/hero.webp');
+        background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 100%), url('../img/guilherme.webp');
         background-size: cover;
         background-position: 75% 20%;
 
