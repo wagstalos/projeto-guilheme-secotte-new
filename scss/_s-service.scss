@@ -48,7 +48,7 @@
 
         .swiper-slide {
             background-color: #f7fcff;
-            background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(22, 60, 71, 0.95) 100%), url('../img/family-.webp');
+            background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/abst.webp');
             background-size: cover;
             padding: 3rem;
             border-radius: 12px;
@@ -58,13 +58,15 @@
             background-position: 25% center;
 
             &:nth-child(2) {
-                background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(22, 60, 71, 0.95) 100%), url('../img/family2.webp');
+                background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/abst2.webp');
                 background-size: cover;
+                background-position: 25% center;
             }
 
             &:nth-child(3) {
-                background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(22, 60, 71, 0.95) 100%), url('../img/family3.webp');
+                background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/abst3.webp');
                 background-size: cover;
+                background-position: 50% center;
             }
 
             display: flex;
