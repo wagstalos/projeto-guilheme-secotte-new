@@ -22,15 +22,8 @@ header {
             }
         }
 
-        .logo {
-            color: $brand-800;
-        }
     }
 
-    .logo {
-        font-size: 3rem;
-        color: $white;
-    }
 
     .container {
         @include flex(row, center, space-between);
@@ -90,12 +83,11 @@ header {
     }
 
     @include responsive(840px) {
-        height: 6rem;
         display: flex;
         align-items: center;
 
         .logo {
-            width: 200px;
+            width: 210px;
         }
 
         nav {
