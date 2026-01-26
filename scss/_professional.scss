@@ -72,6 +72,12 @@
             }
         }
 
+        ul {
+            li {
+                font-size: 1.6rem;
+            }
+        }
+
     }
 
     @include responsive($mobile) {
@@ -116,7 +122,7 @@
 }
 
 .s-differences {
-    padding: 45px 0;
+    padding: 90px 0;
     background-color: $brand-800;
     background: radial-gradient(circle at 50% 5%, #192D5D 0, #0F1324 80%);
     position: relative;
@@ -232,5 +238,43 @@
         display: flex;
         margin: 0 auto;
         border-radius: 20px;
+    }
+
+    @include responsive($tablet) {
+        &__header {
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        hr {
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+        .d-flex {
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .btn-primary {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
