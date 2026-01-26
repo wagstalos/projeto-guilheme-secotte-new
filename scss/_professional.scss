@@ -120,6 +120,21 @@
     background-color: $brand-800;
     background: radial-gradient(circle at 50% 5%, #192D5D 0, #0F1324 80%);
 
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            color: #a8d8ee;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding: 2px 15px;
+            border-radius: 25px;
+            text-transform: uppercase;
+        }
+    }
+
     .title-section {
         text-align: left;
         margin-bottom: 20px;
@@ -130,6 +145,21 @@
         border: solid #f5f7fa17 .5px;
     }
 
+    .btn-primary {
+        background-color: $brand-600;
+        color: $white;
+        padding: 0 4rem;
+        transition: all .3s ease;
+        text-align: center;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 3rem;
+
+        &:hover {
+            background-color: $brand-700;
+        }
+    }
 
     .d-flex {
         // flex-wrap: wrap;
