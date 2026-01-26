@@ -114,3 +114,64 @@
 .s-opinions {
     padding: 90px 0;
 }
+
+.s-differences {
+    padding: 45px 0;
+    background-color: $brand-800;
+    background: radial-gradient(circle at 50% 5%, #192D5D 0, #0F1324 80%);
+
+    .title-section {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    hr {
+        margin-bottom: 50px;
+        border: solid #f5f7fa17 .5px;
+    }
+
+
+    .d-flex {
+        // flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: $gutter*10;
+
+
+        .card {
+            width: calc(25% - 1rem);
+            height: 250px;
+            padding: $gutter*2;
+            background-color: #161E36;
+            background: radial-gradient(circle at 80% 5%, #212c4e 0, #151D33 50%);
+
+            border: 1px solid #2b375a;
+            border-radius: $gutter*2;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            svg {
+                margin-top: 3rem;
+            }
+
+            h3 {
+                color: $white;
+            }
+
+            p {
+                margin-top: 1rem;
+                color: $white;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    img,
+    iframe {
+        display: flex;
+        margin: 0 auto;
+    }
+}
