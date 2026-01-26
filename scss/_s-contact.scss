@@ -6,6 +6,11 @@
         margin-bottom: 30px;
     }
 
+    &__description {
+        width: 40%;
+        margin: 0 auto;
+    }
+
     .maps {
         display: flex;
         justify-content: space-between;
@@ -211,6 +216,10 @@
     }
 
     @include responsive($tablet) {
+        &__description {
+            width: 80%;
+        }
+
         .maps {
             flex-direction: column;
 
