@@ -68,6 +68,11 @@
       .then(response => response.text())
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
+
+        // Add active class to current page link
+        const currentLink = document.querySelector('a[href="./online.html"]');
+        if (currentLink) currentLink.classList.add('active');
+
         if (window.initMenuMobile) window.initMenuMobile();
         if (window.initStickyHeader) window.initStickyHeader();
       });

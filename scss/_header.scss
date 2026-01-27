@@ -65,6 +65,11 @@ header {
                     &:hover {
                         color: $brand-main-light;
                     }
+
+                    &.active {
+                        color: $white;
+                        border-bottom: 2px solid $brand-main-light;
+                    }
                 }
             }
         }
