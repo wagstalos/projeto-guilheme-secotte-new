@@ -1,6 +1,5 @@
 .s-contact {
-    padding: 90px 0;
-    background-color: #f5f7fa;
+    padding: 90px 0 0 0 ;
 
     .title-section {
         margin-bottom: 30px;
@@ -213,6 +212,11 @@
                 transform: translatex(3px);
             }
         }
+    }
+
+    &__footer {
+    padding-top: 45px;
+        padding-bottom: 90px;
     }
 
     @include responsive($tablet) {
