@@ -4,10 +4,11 @@
     font-size: 1.8rem;
     line-height: 5rem;
     font-weight: 500;
+    padding: 0 4rem ;
 }
 
 .btn-primary {
-    background-color: $brand-main-light;
+    background-color: $brand-700;
     font-weight: 500;
     color: $brand-black;
     transition: background-color 0.3s;

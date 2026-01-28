@@ -1,7 +1,7 @@
 .s-hero {
     width: 100%;
     padding-top: 8rem;
-    height: 95vh;
+    height: 100vh;
     @include flex(row, center, center);
 
     background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 70%), url('../img/guilherme.webp');
