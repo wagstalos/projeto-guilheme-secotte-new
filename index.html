@@ -81,7 +81,7 @@
   <section class="s-hero" id="hero">
     <div class="container">
       <div class="d-flex">
-        <div class="s-hero__text" data-aos="fade-up" data-aos-duration="1000">
+        <div class="s-hero__text" data-aos="fade-right" data-aos-duration="500">
 
           <p class="lead mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="22" height="22" viewBox="0 0 24 24" fill="none"
@@ -155,14 +155,12 @@
 
 
         </div>
-
-
       </div>
 
     </div>
   </section>
 
-  <section class="s-about" id="about">
+  <section class="s-about" id="about" data-aos="fade-up" data-aos-duration="1000">
 
     <div class="container">
       <span class="subtitle">Saiba mais </span>
@@ -338,7 +336,7 @@
   <section class="s-differences">
     <canvas id="grid-canvas"></canvas>
     <div class="container">
-      <div class="s-differences__header">
+      <div class="s-differences__header" data-aos="fade-down" data-aos-duration="500">
         <h2 class="title-section color-light mb-80">Diferenciais </h2>
         <span class="">Conheça o que me diferenciam dos outros profissionais</span>
       </div>
@@ -346,7 +344,7 @@
       <hr>
 
       <div class="d-flex">
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="500">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
             stroke="#a8d8ee" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -359,7 +357,7 @@
 
         </div>
 
-        <div class="card">
+        <div class="card" ddata-aos="flip-left" data-aos-duration="500">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
             stroke="#a8d8ee" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
             <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
@@ -371,7 +369,7 @@
 
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="500">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
             stroke="#a8d8ee" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -388,7 +386,7 @@
 
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="500">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
             stroke="#a8d8ee" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
             <path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" />
@@ -406,9 +404,14 @@
 
       </div>
 
-      <div id="youtube-video">
-        <img id="video-thumbnail" src="./img/frame-video.png" alt="Video Thumbnail" width="60%" height="auto"
-          style="cursor: pointer;">
+      <div id="youtube-video" data-aos="fade-up" data-aos-duration="500">
+        <div class="video-container">
+          <div class="play-button">
+            <span></span>
+          </div>
+          <img id="video-thumbnail" src="./img/frame-video.png" alt="Video Thumbnail" width="60%" height="auto"
+            style="cursor: pointer;" loading="lazy">
+        </div>
 
         <!-- <img src="./img/youtube.png" alt="YouTube" width="85px"> -->
       </div>

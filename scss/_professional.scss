@@ -169,7 +169,6 @@
     }
 
     .btn-primary {
-        background-color: $brand-600;
         color: $white;
         padding: 0 4rem;
         transition: all .3s ease;
@@ -238,6 +237,65 @@
         display: flex;
         margin: 0 auto;
         border-radius: 20px;
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background-color: #a8d8ee;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(168, 216, 238, 0.4);
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                border: 2px solid #a8d8ee;
+                animation: pulse 2s infinite ease-out;
+            }
+
+            span {
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                border-left: 25px solid $brand-800; // Using dark brand color for contrast
+                margin-left: 8px; // Offset for better centering visual
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: lighten(#a8d8ee, 10%);
+            }
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
     }
 
     @include responsive($tablet) {
