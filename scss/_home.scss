@@ -9,6 +9,13 @@
     background-size: 100%;
     background-position: center 65%;
 
+    &.online {
+        background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 70%), url('../img/guilherme-online.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center 65%;
+    }
+
     .d-flex {
         align-items: center;
     }
@@ -31,7 +38,7 @@
 
     &__text {
         margin-bottom: 3.9rem;
-        width:55%;
+        width: 55%;
 
         .lead {
             display: flex;
@@ -112,26 +119,17 @@
         }
     }
 
-    .infos {
-        max-width: 50%;
 
-        li {
-            border-bottom: 1px solid #efefef;
-            padding: 9px;
-        }
-
-        &__title {
-            color: $gray-500;
-            font-size: 2.5rem;
-        }
-
-        &__description {
-            font-size: 1.5rem;
-            color: $gray-400;
-        }
-    }
 
     @include responsive($laptop) {
+        background-size: 150%;
+
+        &.online {
+
+            background-size: 150%;
+
+        }
+
         &__text {
             .title {
                 font-size: 3rem;
@@ -151,6 +149,15 @@
         background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 100%), url('../img/guilherme.webp');
         background-size: cover;
         background-position: 75% 20%;
+
+
+        &.online {
+            background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 95%), url('../img/guilherme-online.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 75% 20%;
+        }
+
 
         .d-flex {
             flex-direction: column;
@@ -199,6 +206,10 @@
     }
 
     @include responsive($mobile) {
+
+          &.online {
+            background-position: 63% 20%;
+        }
 
         ul {
             li {
