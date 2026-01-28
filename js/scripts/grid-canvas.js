@@ -12,10 +12,14 @@ if (canvas && section) {
   const mouse = { x: null, y: null };
 
   function resize() {
-    width = canvas.width = section.offsetWidth;
-    height = canvas.height = section.offsetHeight;
+    const rect = section.getBoundingClientRect();
+    width = canvas.width = rect.width;
+    height = canvas.height = rect.height;
     createParticles();
   }
+
+  // Handle late layout shifts
+  window.addEventListener("load", resize);
 
   function createParticles() {
     particles = [];
