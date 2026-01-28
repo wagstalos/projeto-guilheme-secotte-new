@@ -171,16 +171,18 @@
 
     .btn-primary {
         color: $white;
-        padding: 0 4rem;
+        padding: 0 5rem;
         transition: all .3s ease;
         text-align: center;
         display: block;
         width: fit-content;
         margin: 0 auto;
-        margin-top: 3rem;
+        margin-top: 4rem;
+    
 
         &:hover {
-            background-color: $brand-700;
+            background-color: $white;
+            color: $brand-800;
         }
     }
 
