@@ -63,7 +63,7 @@ header {
                     transition: color 0.3s;
 
                     &:hover {
-                        color: $brand-main-light;
+                        color: rgba($white, 0.7);
                     }
 
                     &.active {
