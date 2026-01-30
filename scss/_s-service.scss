@@ -5,8 +5,6 @@
     background-position: 25% center;
 
     .btn-secondary {
-        // color: $brand-600;
-        // background-color: transparent;
         font-size: 1.6rem;
         padding: 1rem 4rem;
 
@@ -154,7 +152,11 @@
     }
 
     @include responsive($tablet) {
+
+        
         .btn-secondary {
+            background-color: $brand-700;
+            color: $white;
             display: flex;
             margin: 0 auto;
             text-align: center;
