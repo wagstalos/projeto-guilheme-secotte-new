@@ -42,35 +42,42 @@
         h3 {
             color: $white;
             margin-bottom: 10px;
+            text-align: center;
 
             &::first-letter {
                 font-size: 4rem;
             }
         }
 
+        img {
+            display: flex;
+            margin: 0 auto;
+        }
+
         .swiper-slide {
-            background-color: #f7fcff;
-            //background-color: $brand-600;
-            background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/40.webp');
-            background-size: cover;
+            //background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/21.webp');
+            // background-size: cover;
             padding: 3rem;
             border-radius: 12px;
             height: auto;
-            border: 1px solid #e1e1e1;
-            height: 381px;
+            border: 1px solid $brand-600;
+            height: 370px;
             background-position: 25% center;
 
-            &:nth-child(2) {
-                background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/40.webp');
-                background-size: cover;
-                background-position: 25% center;
-            }
+            background: #569FC4;
+            background: linear-gradient(42deg, rgba(86, 159, 196, 1) 12%, rgba(127, 191, 220, 1) 78%, rgba(168, 216, 238, 1) 100%);
 
-            &:nth-child(3) {
-                background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/40.webp');
-                background-size: cover;
-                background-position: 50% center;
-            }
+            // &:nth-child(2) {
+            //     background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/40.webp');
+            //     background-size: cover;
+            //     background-position: 25% center;
+            // }
+
+            // &:nth-child(3) {
+            //     background: linear-gradient(180deg, rgba(22, 60, 71, 0) 0%, rgba(1, 16, 21, 0.95) 100%), url('../img/40.webp');
+            //     background-size: cover;
+            //     background-position: 50% center;
+            // }
 
             display: flex;
             flex-direction: column;
@@ -83,8 +90,11 @@
             }
 
             p {
-                color: $gray-100;
+                color: $white;
                 font-size: 1.6rem;
+                height: 180px;
+                display: flex;
+                align-items: end;
             }
         }
     }

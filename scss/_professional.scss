@@ -1,6 +1,7 @@
 .s-professional {
     @include paddingSection(90px);
 
+
     .d-flex {
         margin-top: 50px;
         justify-content: space-around;
@@ -124,7 +125,8 @@
 .s-differences {
     padding: 90px 0;
     background-color: $brand-800;
-    background: radial-gradient(circle at 50% 5%, #192D5D 0, #0F1324 80%);
+    background: #569FC4;
+    background: radial-gradient(circle, rgba(86, 159, 196, 1) 1%, rgba(90, 162, 199, 1) 0%, rgba(127, 191, 220, 1) 77%, rgba(168, 216, 238, 1) 100%);
     position: relative;
     overflow: hidden;
 
@@ -178,7 +180,7 @@
         width: fit-content;
         margin: 0 auto;
         margin-top: 4rem;
-    
+
 
         &:hover {
             background-color: $white;
