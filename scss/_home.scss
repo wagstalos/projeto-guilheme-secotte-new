@@ -8,18 +8,42 @@
         display: none;
     }
 
+    @keyframes floating {
+        0% {
+            transform: translate(-50%, 0px);
+        }
+
+        50% {
+            transform: translate(-50%, -15px);
+        }
+
+        100% {
+            transform: translate(-50%, 0px);
+        }
+    }
+
+    .tablet {
+        position: absolute;
+        left: 60%;
+        bottom: 4%;
+        width: 230px;
+        z-index: 1;
+        transform: translateX(-50%);
+        animation: floating 3s ease-in-out infinite;
+    }
+
     background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 70%),
     url('../img/guilherme.webp');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 65%;
 
-    &.online {
-        background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 70%), url('../img/guilherme-online.webp');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center 65%;
-    }
+    // &.online {
+    //     background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 70%), url('../img/guilherme-online.webp');
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //     background-position: center 65%;
+    // }
 
     .d-flex {
         align-items: center;
@@ -44,6 +68,7 @@
     &__text {
         margin-bottom: 3.9rem;
         width: 55%;
+        z-index: 2;
 
         .lead {
             display: flex;
@@ -76,16 +101,6 @@
                 font-weight: 700;
                 color: $brand-main;
 
-                // &::after {
-                //     content: "";
-                //     width: 100%;
-                //     height: 5px;
-                //     background-color: $brand-main;
-                //     position: absolute;
-                //     bottom: 5px;
-                //     left: 0;
-                //     z-index: -1;
-                // }
             }
         }
 
@@ -129,6 +144,13 @@
     @include responsive($laptop) {
         background-size: 150%;
 
+        .tablet {
+            position: absolute;
+            left: 60%;
+            bottom: 24%;
+            width: 180px;
+        }
+
         &.online {
 
             background-size: 150%;
@@ -157,12 +179,12 @@
         background-position: 75% 20%;
 
 
-        &.online {
-            background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 95%), url('../img/guilherme-online.webp');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 75% 20%;
-        }
+        // &.online {
+        //     background: linear-gradient(90deg, rgba($brand-800, 1) 30%, rgba($brand-800, 0.8) 50%, rgba($brand-main, 0) 95%), url('../img/guilherme-online.webp');
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     background-position: 75% 20%;
+        // }
 
 
         .d-flex {
@@ -215,6 +237,16 @@
 
     @include responsive($mobile) {
         background: $brand-800;
+
+        .tablet {
+            position: absolute;
+            left: 20%;
+            bottom: 20%;
+            width: 130px;
+            z-index: 2;
+            transform: translateX(-50%);
+            animation: floating 3s ease-in-out infinite;
+        }
 
 
         &__gui {
