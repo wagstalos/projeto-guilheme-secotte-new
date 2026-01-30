@@ -32,6 +32,13 @@ header {
     .btn-secondary {
         padding: 1rem 2rem;
         line-height: 0;
+        background-color: $brand-700;
+        color: $white;
+
+        &:hover {
+            background-color: $brand-800;
+            color: $white;
+        }
     }
 
     nav {
@@ -87,7 +94,7 @@ header {
         }
     }
 
-    @include responsive(840px) {
+    @include responsive(990px) {
         display: flex;
         align-items: center;
 
