@@ -6,6 +6,11 @@
         align-items: center;
     }
 
+    .btn-secondary {
+        background-color: $brand-700;
+        color: $white;
+    }
+
     hr {
         border: 1px solid #dfedf3;
         margin: 20px 0;
@@ -62,6 +67,8 @@
         }
 
         .btn-secondary {
+            background-color: $brand-700;
+            color: $white;
             width: 80%;
             margin: 0 auto;
             display: flex;
